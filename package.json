@@ -1,0 +1,19 @@
+{
+  "name": "auto-readme",
+  "version": "1.0.0",
+  "description": "Professional README Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sharareh18/Auto-README.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sharareh18/Auto-README/issues"
+  },
+  "homepage": "https://github.com/Sharareh18/Auto-README#readme"
+}
