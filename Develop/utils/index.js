@@ -1,10 +1,14 @@
-const inquirer = require('inquirer');
-const fs = require('fs');
+const inquirer = require(`inquirer`);
+const fs = require(`fs`);
+const generateMarkdown = require(`./generateMarkdown.js`);
+
 // TODO: Include packages needed for this application
 
 // User input for README title, description, installation instructions, usage information, contribution guidelines, test instructions
 // license, user GitHub handle, user email.
-const questions = [
+const questions = () => {
+    return inquirer.prompt([
+   
     {
         type: "input",
         message: "What is the title of your project?",
@@ -56,13 +60,28 @@ const questions = [
         name: "email",
     },
 
-];
+])
+.then((answers) => {
+    const readmeContent = generateMarkdown(answers);
+
+    fs.writeFile('newREADME.md', readmeContent, (err) =>
+      err ? console.log(err) : console.log('Successfully created README!')
+    );
+  });
+};
+
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
-
+// function writeToFile(title, data) { 
+//     fs.writeFile(`${title}.md`, data, (err) =>
+//       err ? console.log(err) : console.log('Successfully created README!')
+//     );
+// }
 // TODO: Create a function to initialize app
-function init() { }
+// function init() { 
+  
+// }
+    
 
 // Function call to initialize app
-init();
+questions();
