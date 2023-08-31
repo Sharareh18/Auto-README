@@ -18,10 +18,13 @@ There is no installation required for this project. You can clone the files in G
 
 ## Usage
 
-
-https://sharareh18.github.io/rain-or-shine/
+Link to GitHub repo:
+https://github.com/Sharareh18/Auto-README
 
 ![Screenshot of a README file displaying all the components](Develop/utils/images/SampleREADME.png)
+
+Video Demonstration: 
+<video src="Develop/utils/Video%20&%20Images/AUTO-README.mp4" controls title="Auto-README-Demo"></video>
 
 ## Credits
 
