@@ -27,7 +27,7 @@ https://github.com/Sharareh18/Auto-README
 
 
 
-Video Demonstration: 
+Video Demonstration (in case the video doesn't show up, it is linked in the video & images file and this is the Google link https://drive.google.com/file/d/1-OSssdUzW0ukRV5wTDOfyccVq4XGea-h/view) : 
 
 <video src="Develop/utils/Video%20&%20Images/AUTO-README.mp4" controls title="Auto-README-Demo"></video>
 
