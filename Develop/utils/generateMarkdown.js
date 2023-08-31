@@ -81,8 +81,7 @@ function generateMarkdown(data) {
 
   ## Questions
   ### For questions regarding this project please feel free to take a look 
-  at the code using the GitHub profile linked below or contact me via email. 
-  ${data.github}
+  at my GitHub profile [${data.github}](https://github.com/${data.github}) or contact me via email: 
   ${data.email}`;
 };
 
