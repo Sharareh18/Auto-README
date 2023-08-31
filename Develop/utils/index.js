@@ -1,8 +1,8 @@
+// packages used 
 const inquirer = require(`inquirer`);
 const fs = require(`fs`);
 const generateMarkdown = require(`./generateMarkdown.js`);
 
-// TODO: Include packages needed for this application
 
 // User input for README title, description, installation instructions, usage information, contribution guidelines, test instructions
 // license, user GitHub handle, user email.
@@ -61,6 +61,7 @@ const questions = () => {
     },
 
 ])
+// write answers from user input to a new README file that's generated 
 .then((answers) => {
     const readmeContent = generateMarkdown(answers);
 
@@ -70,18 +71,6 @@ const questions = () => {
   });
 };
 
-
-// TODO: Create a function to write README file
-// function writeToFile(title, data) { 
-//     fs.writeFile(`${title}.md`, data, (err) =>
-//       err ? console.log(err) : console.log('Successfully created README!')
-//     );
-// }
-// TODO: Create a function to initialize app
-// function init() { 
-  
-// }
-    
 
 // Function call to initialize app
 questions();
