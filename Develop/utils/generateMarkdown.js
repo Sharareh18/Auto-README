@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
   }
   if (license === 'MIT') {
     return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
-  } else {
+  } else if (license === 'N/A') {
     return ``;
   }
 };
@@ -29,7 +29,7 @@ function renderLicenseLink(license) {
   else if (license === 'MIT') {
     return `https://lbesson.mit-license.org/`
   }
-  else {
+  else if (license === 'N/A') {
     return ``;
   }
 };
@@ -39,7 +39,7 @@ function renderLicenseLink(license) {
 // If there is no license, returns an empty string
 function renderLicenseSection(license) {
   if (license) {
-    return `## License ${license}`
+    return `This project is covered under the following license: ${license}`
   } else {
     return ``;
   }
@@ -56,11 +56,10 @@ function generateMarkdown(data) {
   * [Installation](#installation)
   * [Usage](#usage)
   * [Licenses](#license)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
+  * [Contribution](#contribution)
+  * [Test](#test)
   * [Questions](#questions)
-  * [Credits](#credits)
-
+  
   ## Description
   ${data.description}
 
@@ -74,11 +73,17 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}
   ${renderLicenseLink(data.license)}
 
-  ## Contributing
-  ${data.contributing}
+  ## Contribution
+  ${data.contribution}
 
-  ## Tests
-  ${data.tests}`;
+  ## Test
+  ${data.test}
+
+  ## Questions
+  ### For questions regarding this project please feel free to take a look 
+  at the code using the GitHub profile linked below or contact me via email. 
+  ${data.github}
+  ${data.email}`;
 };
 
 module.exports = generateMarkdown;

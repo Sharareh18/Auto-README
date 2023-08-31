@@ -14,14 +14,14 @@ A high quality README is an important part of any project and this application w
 
 ## Installation
 
-There is no installation required for this project. Please use the link in the usage section (below) to view the code on GitHub along with the video link demonstrating the "Auto-REAMDE" app in action.   
+There is no installation required for this project. You can clone the files in GitHub or use the link in the usage section (below) to view the code on GitHub along with the video link demonstrating the "Auto-REAMDE" app in action.   
 
 ## Usage
 
 
 https://sharareh18.github.io/rain-or-shine/
 
-
+![Screenshot of a README file displaying all the components](Develop/utils/images/SampleREADME.png)
 
 ## Credits
 
